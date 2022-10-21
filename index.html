@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        
+        <ul class="nav_ul">
+        <li><a class="nav_li" href="#home">Home</a></li>
+        <li><a class="nav_li" href="#news">News</a></li>
+        <li><a class="nav_li" href="#contact">Contact</a></li>
+        <li><a class="nav_li" href="#about">About</a></li>
+        </ul>
+    
+
+
+
+         <div class="row">
+         <div class="column1"> 
+
+         <img src="./bilder_lucky_duck/lucky_duck.png" alt="Cinque Terre" width="100%" height="200">
+         <img src="./bilder_lucky_duck/bar.jpeg" alt="" style="width:100%">
+         <img src="./bilder_lucky_duck/bartender.jpeg" alt="" style="width:100%">
+
+         </div>    
+       
+
+       
+          <div class="column2">
+
+            <h1>Restaurang Lucky Duck!</h1>
+
+            <input type="checkbox" id="kott" name="checkbox" onclick='handleKott(event);'/>
+            <label for="vegetarisk"> Kött menu</label>
+
+            <input type="checkbox" id="vegetarisk" name="checkbox" onclick='handleVegitarisk(event);'/>
+            <label for="vegetarisk"> Vegetarisk menu</label>
+            <input type="checkbox" id="lactos" name="checkbox" onclick='handleLactos(event);'/>
+            <label for="vegetarisk"> Ingen lactos</label>
+            <input type="checkbox" id="gluten" name="checkbox" onclick='handleGluten(event);'/>
+            <label for="vegetarisk"> Ingen gluten</label>
+            <input type="checkbox" id="nuts" name="checkbox" onclick='handleNuts(event);'/>
+            <label for="vegetarisk"> Ingen nuts</label>
+
+            <select id="selectedSort" onchange="handleSort()">
+                <option value="none">Pris sortering</option>
+                <option value="stigande" >Stigande</option>
+                <option value="fallande">Fallande</option>
+            </select>
+            
+             <p id="demo"></p>
+             <div class="content" id="content" class="menu"></div>
+          </div>
+       
+    
+            
+
+            <div class="column3">
+
+                <img src="./bilder_lucky_duck/asparagus.jpeg" alt="" style="width:100%">
+                <img src="./bilder_lucky_duck/egg.jpeg" alt="" style="width:100%">
+                <img src="./bilder_lucky_duck/food.jpeg" alt="" style="width:100%">
+
+            </div>
+
+                       
+
+            
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
